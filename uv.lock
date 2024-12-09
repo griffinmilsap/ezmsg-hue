@@ -1,0 +1,34 @@
+version = 1
+requires-python = ">=3.10"
+
+[[package]]
+name = "ezmsg"
+version = "3.6.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/11/fa/b4dffddc08f608f5d69de7692a5c56a6f82c4f8cd0555628fe3627344d6e/ezmsg-3.6.0.tar.gz", hash = "sha256:978d8c8934fbda9feb236e1409d47d99c0631cd3e886469ceab6180f0fe3630a", size = 141506 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a9/22/02a78c0dd48a44ba4a57394d0917e1fe1223f5f1c81b93c5d3c9d9c9f6bf/ezmsg-3.6.0-py3-none-any.whl", hash = "sha256:adda57e28018474fdd601874d04a1a3e598422190f8ce31449b8c75525f1236d", size = 69895 },
+]
+
+[[package]]
+name = "ezmsg-hue"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "ezmsg" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "ezmsg", specifier = ">=3.6.0" }]
+
+[[package]]
+name = "typing-extensions"
+version = "4.12.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/df/db/f35a00659bc03fec321ba8bce9420de607a1d37f8342eee1863174c69557/typing_extensions-4.12.2.tar.gz", hash = "sha256:1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8", size = 85321 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/26/9f/ad63fc0248c5379346306f8668cda6e2e2e9c95e01216d2b8ffd9ff037d0/typing_extensions-4.12.2-py3-none-any.whl", hash = "sha256:04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d", size = 37438 },
+]
